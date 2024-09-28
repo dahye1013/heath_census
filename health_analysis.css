@@ -1,92 +1,244 @@
-/* Basic CSS for the navigation bar */
-
+/* Basic Reset for consistency */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-nav {
-  background-color: #f0f0f0;
+
+/* Modern Font & Typography */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
   padding: 20px;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style-type: none;
-  /* padding: 0; */
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #2c3e50;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-/* Basic CSS for the form elements */
-body {
-  font-family: Arial, sans-serif;
-  /* margin: 20px; */
+nav a:hover {
+  color: #1abc9c;
 }
 
-h1 {
-  margin-bottom: 20px;
+/* Form Styling - Modern and Intuitive */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add gap for better spacing */
 }
 
-div {
-  margin-bottom: 10px;
-}
-
+/* Label Styling */
 label {
-  display: inline-block;
-  width: 100px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 5px;
+  display: block;
 }
 
-input[type="text"],
-input[type="number"],
-select {
-  width: 200px;
-  padding: 5px;
+/* Input Fields - Intuitive Focus and Style */
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8f9fa; /* Light background to distinguish input areas */
 }
 
+/* Input Hover & Focus Effects */
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.2);
+  background-color: #ffffff;
+}
+
+/* Gender Radio Buttons */
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.radio-group label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  accent-color: #1abc9c; /* Modern radio button style */
+  
+}
+
+/* Button Styling */
 button {
-  padding: 7px 15px;
-  background-color: #4caf50;
+  padding: 15px 0;
+  background-color: #1abc9c;
   color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
   border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #16a085;
 }
 
-/* Basic CSS for the report section */
-h2 {
-  margin-top: 30px;
-}
-
-#report,
-#result {
-  padding: 10px;
-  max-width: 400px;
-  word-wrap: break-word;
-}
-#result {
-  height: 400px;
-  width: 500px;
+/* Form Container Adjustments */
+.container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+}
+
+form .form-group {
+  display: flex;
   flex-direction: column;
+  border: 3px solid #16a085;
 }
+
+/* Placeholder Styling */
+input::placeholder {
+  color: #95a5a6;
+}
+
+/* For Select Dropdown */
+select {
+  appearance: none;
+  background: url('data:image/svg+xml;base64,...') no-repeat right 12px center;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding-right: 30px; /* Extra space for dropdown arrow */
+}
+
+/* Add Patient Button Alignment */
+button {
+  width: 100%; /* Make the button full width for better accessibility */
+  padding: 15px;
+}
+
+/* Analysis Report Section */
+#report, #result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#addPatient {
+  margin: 20px auto;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #result img {
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
+
+#result p {
+  text-align: left;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+#result strong {
+  color: #2c3e50;
+}
+
+/* Button Alignment */
+button {
+  display: inline-block;
+  background-color: #2c7f88;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  nav ul li {
+      margin-right: 10px;
+  }
+
+  form {
+      padding: 15px;
+  }
+
+  input[type="text"], input[type="number"], select {
+      width: 100%;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  #result img {
+      width: 100%;
+  }
+}
+
