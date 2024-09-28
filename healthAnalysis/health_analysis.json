@@ -1,0 +1,55 @@
+{
+  "conditions": [
+    {
+      "name": "Thyroid",
+      "imagesrc": "https://unsplash.com/ko/%EC%82%AC%EC%A7%84/%EB%8B%8C%ED%85%90%EB%8F%84-wii-%EA%B2%8C%EC%9E%84-%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC%EB%A5%BC-%EB%93%A4%EA%B3%A0-%EC%9E%88%EB%8A%94-%EC%82%AC%EB%9E%8C-SCfDL1HxuEs",
+      "symptoms": [
+        "Fatigue",
+        "Weight gain or loss",
+        "Dry skin",
+        "Muscle weakness",
+        "Irregular menstrual periods"
+      ],
+      "prevention": [
+        "Eat a balanced diet",
+        "Exercise regularly",
+        "Get regular check-ups"
+      ],
+      "treatment": "Medication like levothyroxine may be prescribed by a doctor."
+    },
+    {
+      "name": "Diabetes",
+      "imagesrc": "https://images.unsplash.com/photo-1727473301548-3f6f50c50e83?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8",
+      "symptoms": [
+        "Frequent urination",
+        "Increased thirst",
+        "Blurry vision",
+        "Fatigue",
+        "Slow healing of cuts or sores"
+      ],
+      "prevention": [
+        "Maintain a healthy weight",
+        "Follow a balanced diet",
+        "Regular exercise"
+      ],
+      "treatment": "Management includes medication, insulin therapy, and lifestyle changes."
+    },
+    {
+      "name": "High Blood Pressure",
+      "imagesrc": "https://images.unsplash.com/photo-1727344954274-76782f8b0bdb?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+      "symptoms": [
+        "Headaches",
+        "Shortness of breath",
+        "Chest pain",
+        "Dizziness",
+        "Blurred or double vision"
+      ],
+      "prevention": [
+        "Reduce salt intake",
+        "Exercise regularly",
+        "Maintain a healthy weight"
+      ],
+      "treatment": "Medications like ACE inhibitors or diuretics may be prescribed."
+    }
+  ]
+}
